@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (C) 2012 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<resources>
+
+    <string name="app_name">RunningMan壁纸</string>
+    <string name="clear_cache_menu">清除缓存</string>
+    <string name="clear_cache_complete">缓存已经被清理</string>
+    <string name="imageview_description">缩略图</string>
+	<string name="local">本地</string>
+	<string name="set_wallpaper">设置壁纸</string>
+	<string name="set_wallpaper_success">设置壁纸成功</string>
+	<string name="set_wallpaper_failure">设置壁纸失败</string>
+	<string name="download">下载壁纸</string>
+	<string name="download_success">壁纸下载成功</string>
+	<string name="download_failure">壁纸下载失败</string>
+	<string name="network_state_error">网络异常,您的网络不给力</string>
+	<string name="download_hint">您本地还没有壁纸，快来下载些吧</string>
+	<string name="confirm">确认</string>
+	<string name="sdcard_error">SD异常,未挂载上</string>
+	<string name="delete">删除</string>
+	<string name="delete_success">删除成功</string>
+	<string name="home">首页</string>
+	<string name="newest">最新</string>
+    <string name="setting">设置</string>
+    <string name="cancel">取消</string>
+    <string name="confirm_exit">确认退出吗?</string>
+</resources>

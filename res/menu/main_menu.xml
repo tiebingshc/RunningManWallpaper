@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/clear_cache"
+        android:icon="@drawable/icon_delete_selected"
+        android:showAsAction="never"
+        android:title="@string/clear_cache_menu"/>
+    <item
+       android:id="@+id/local"
+       android:icon="@drawable/icon_download_selected"
+       android:showAsAction="never"
+       android:title="@string/local"/> 
+       
+    <item
+    android:id="@+id/evaluate"
+    android:icon="@drawable/ic_launcher"
+    android:showAsAction="never"
+    android:title="评价"/> 
+</menu>

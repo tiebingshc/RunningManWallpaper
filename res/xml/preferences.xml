@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preferencescreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <checkboxpreference android:key="pref_sync"
+       android:title="Title_Checkbox"
+       android:summary="summary"
+       android:defaultValue="true"></checkboxpreference>
+    <preferencecategory android:title="title_category"
+    android:key="pref_key_general" >
+        <switchpreference android:title="title_switch"
+        android:key="pref_key_auto_boot"
+        android:defaultValue="true"></switchpreference>
+    </preferencecategory>
+</preferencescreen>

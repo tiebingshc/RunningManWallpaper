@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (C) 2012 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frameLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+    <ImageView
+        android:id="@+id/img_wallpaper"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:contentDescription="@string/imageview_description" />
+    <RelativeLayout
+        android:id="@+id/layout_title"
+        android:layout_width="fill_parent"
+        android:layout_height="54dp"
+        android:background="@drawable/bg_title">
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/title_button_back"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp" />
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+	        <Button
+	            android:id="@+id/btn_wallpaper"
+	            android:layout_width="40dp"
+	            android:layout_height="40dp"
+	            android:layout_gravity="top"
+	            android:gravity="center_horizontal"
+	            android:background="@drawable/btn_wallpaper"/>
+	        <TextView 
+	            android:id="@+id/txt_wallpaper"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/set_wallpaper"
+	            android:textSize="10sp"
+	            android:layout_gravity="bottom"
+	            android:gravity="center_horizontal"/>
+        </LinearLayout>
+        <LinearLayout 
+           android:layout_width="wrap_content"
+           android:layout_height="fill_parent"
+           android:layout_alignParentRight="true"
+           android:layout_marginRight="5dp"
+           android:orientation="vertical">
+	        <Button
+		        android:id="@+id/btn_download"
+		        android:layout_width="40dp"
+		        android:layout_height="40dp"
+		        android:layout_gravity="top"
+		        android:gravity="center_horizontal"
+		        android:background="@drawable/btn_download"/>
+	        <TextView 
+	            android:id="@+id/txt_download"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="bottom"
+		        android:text="@string/download"
+		        android:textSize="10sp"
+		        android:gravity="center_horizontal"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    
+</FrameLayout>

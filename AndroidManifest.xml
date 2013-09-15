@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.leo.runningman.ui"
+    android:versionCode="3"
+    android:versionName="1.2" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+    
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:debuggable="true" >
+        <activity
+            android:name="com.leo.runningman.ui.LoaddingActivity"
+            android:screenOrientation="portrait">
+     		<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme"/>
+        <activity
+            android:name="com.leo.runningman.ui.ImageDetailActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.FullScreen" >
+        </activity>
+        <activity
+            android:name="com.leo.runningman.ui.ImageGridActivity"
+            android:label="@string/app_name"
+            android:theme="@style/MyTheme" >
+        </activity>
+        <activity android:name=".LocalImageActivity"
+           		  android:screenOrientation="portrait"
+           		  android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.google.ads.AdActivity"
+        android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+    </application>
+
+</manifest>
